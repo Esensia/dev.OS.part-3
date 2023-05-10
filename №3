@@ -1,0 +1,12 @@
+const TelegramBot = require('node-telegram-bot-api');
+
+// Токен вашего бота в Telegram
+const token = 'YOUR_TOKEN';
+
+// Создаем экземпляр бота
+const bot = new TelegramBot(token, {polling: true});
+
+// Отправляем сообщение с информацией о Илоне Маске
+bot.sendMessage('YOUR_CHAT_ID', 'Илон Маск - американский предприниматель, изобретатель, инженер и создатель таких компаний, как Tesla, SpaceX, Neuralink и The Boring Company. Он также известен своими идеями в области электро- и космической энергетики, а также концепцией гиперпетли. Владеет состоянием более 200 миллиардов долларов.');
+
+// замените "YOUR_TOKEN" на токен вашего бота в Telegram и "YOUR_CHAT_ID" на id чата, в который нужно отправить сообщение.
